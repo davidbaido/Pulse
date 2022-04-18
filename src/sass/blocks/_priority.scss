@@ -1,0 +1,51 @@
+.priority {
+    min-height: 470px;
+    background-color: #f6f6f6;
+    padding: 70px 0 78px 0;
+    &__main {
+        text-align: center;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 65px;
+        
+    }
+    &__descr {
+        width: 243px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__title {
+        margin-top: 38px;
+        text-align: center;
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    &__subtitle {
+        margin-top: 25px;
+        text-align: center;
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: normal;
+        a {
+            color: #ff0000;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-decoration: underline;
+        }
+    }
+    
+
+        
+
+
+    }
+    
