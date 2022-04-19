@@ -6,7 +6,7 @@
         margin: 0 auto;
     }
     
-    .slick-prev, .slick-next {
+    .prev, .next {
         position: absolute;
         border: none;
         background-color: #fff;
@@ -21,9 +21,28 @@
         
         
     }
-    .slick-next {
+    .next {
         right: -66px;
         left: auto;
         
+    }
+
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .tns-nav {
+        display: flex;
+        justify-content: center;
+        button {
+            background-color: red;
+            border: none;
+            margin-right: 2px;
+        }
+        .tns-nav-active {
+            background-color: rgb(61, 0, 0);
+        }
     }
 }
