@@ -81,7 +81,8 @@
 }
 
 @media (max-width: 1200px) {
-    .carousel {
+    section.carousel {
+        padding: 81px 20px;
 
         .next, .prev {
             display: none;

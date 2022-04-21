@@ -25,4 +25,13 @@
         font-size: 16px;
         color: #ffff;
     }
+    &_mini {
+        width: 131px;
+        height: 40px;
+        font-size: 14px;
+        &:hover {
+            
+            box-shadow: 1px 1px 15px rgb(251, 2, 255);
+        }
+    }
 }
