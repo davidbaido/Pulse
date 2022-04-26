@@ -1,11 +1,5 @@
 .title {
-    margin-top: 38px;
-    text-align: center;
-    color: #0d0d0d;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
+    @include title;
     &_left {
         color: #ffffff;
         font-size: 36px;

@@ -1,0 +1,45 @@
+.review {
+    min-height: 925px;
+    padding-bottom: 70px;
+    img {
+        height: 100%;
+    }
+    hr {
+        margin-top: 50px;
+        margin-bottom: 53px;
+        height: 1px;
+        background-color: #f6f6f6;  
+    }
+    &__title {
+        @include title;
+        margin-bottom: 70px;
+        
+    }
+    &__wrapper {
+        display: flex;
+        align-items:flex-start;   
+    }
+    &__form {
+        margin-left: 62px;
+    }
+    &__main {
+        margin-bottom: 10px;
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left;
+    }
+    &__subtitle {
+        margin-bottom: 20px;
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: left;
+    }
+    &__descr {
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: left;
+    }
+}

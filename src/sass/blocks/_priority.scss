@@ -21,11 +21,7 @@
     }
     &__title {
         margin-top: 38px;
-        text-align: center;
-        color: #0d0d0d;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: normal;
+        @include title;
     }
     &__subtitle {
         margin-top: 25px;

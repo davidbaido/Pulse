@@ -11,6 +11,7 @@
         }
 
     }
+    
     .promo {
         &__wrapper {
             padding-right: 25px;
@@ -25,6 +26,18 @@
             font-size: 16px;
         }
     }
+
+    .catalog {
+        li {
+            width: 170px;
+            div {
+                font-size: 17px;
+            }
+        }
+    }
+    
+    
+        
 
 
 } 
@@ -77,8 +90,44 @@
             
         }
     }
+    .catalog {
+        #c_content {
+            justify-content: center;
+        }
+        li {
+            width: 150px;
+            div {
+                font-size: 16px;
+            }
+        }
+    }
+    .review {
+        .review__content {
+            .review__wrapper {
+                flex-direction: column;
+                .review__picture {
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
 
 }
+
+@media (max-width: 433px) {
+    
+    .catalog {
+        li {
+            width: 100px;
+            div {
+                font-size: 12px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
 
 @media (max-width: 1200px) {
     section.carousel {
