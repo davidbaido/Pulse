@@ -35,7 +35,10 @@
             }
         }
     }
-    
+    #pageup_media {
+        right: 25px;
+        bottom: 25px;
+    }
     
         
 
@@ -153,6 +156,23 @@
             height: 30px;
         }
     }
+    .overlay {
+            #consultation, #order {
+                width: 80%;
+                input {
+                    width: 90%;
+                
+                }
+                button {
+                    width: 90%
+                }
+            }
+
+        }
+    #pageup_media {
+        right: 13px;
+        bottom: 13px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -178,6 +198,12 @@
         }
     }
 
+    #pageup_media {
+        width: 35px;
+    }
+    
+
+
 }
 
 @media (max-width: 1200px) {
@@ -192,5 +218,26 @@
         img {
             width: 100%;
         }
+    }
+}
+
+@media (max-width: 375px) {
+    .overlay {
+        #consultation, #order {
+            padding-left: 20px;
+            width: 80%;
+            input {
+                width: 70%;
+                
+            
+            }
+            button {
+                width: 70%
+            }
+            .modal__close {
+                right: -28px;
+            }
+        }
+
     }
 }

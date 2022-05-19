@@ -69,7 +69,10 @@
   $('.modal__close').on('click', function () {
     $('.overlay, #consultation, #thanks, #order').fadeOut('slow')
   });
-  //allwordsInOrder
+  //allwordsInOrder 
+
+
+
   $('.button_mini').each(function(i) {
     $(this).on('click', function () {
       $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text())
@@ -77,6 +80,65 @@
     });
 
   });
+
+  function validateForms(form) {
+    $(form).validate({
+      rules: {
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          email: true,
+        },
+      },
+        messages: {
+          name: "Пожалуйста, введите своё имя",
+          phone: "Пожалуйста, введите свой номер телефона",
+          email: {
+            required: "Пожалуйста, введите свой е-мэйл",
+            email: "Проверьте правильно ли введен адрес почты"
+          }
+        }
+    });
+  }
+
+
+validateForms('#consultation form'),
+validateForms('#order form'),
+validateForms('#consult-form')
+
+$("input[name=phone]").mask("+999 (999)-999-999");
+
+$('form').submit(function(e) {
+  e.preventDefault();
+  $.ajax({
+    type: "POST",
+    url: "mailer/smart.php",
+    data: $(this).serialize()
+  }).done(function() {
+      $(this).find("input").val("");
+      $('#consultation, #order').fadeOut(),
+      $('.overlay, #thanks').fadeIn(),
+
+      $('form').trigger('reset');
+    });
+    return false;
+  }); //17:13
+
+  //smoothpageup
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    }
+  });
   
+  $("a[href^='#']").click(function(){
+    var _href = $(this).attr('href');
+    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+    return false;
+  });
+
 
 

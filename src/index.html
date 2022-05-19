@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <script src="https://kit.fontawesome.com/5bd70b3448.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cdc2389669.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section class="promo" id="up">
         <div class="container">
             <header class="header">
 
@@ -77,7 +77,7 @@
                     так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
             </div>
             <div class="priority__descr">
-                <img src="img/icons/benefits_heart.png" alt="puls">
+                <img src="img/icons/benefits_heart.png" alt="puls" class="priority__icon_animated">
                 <div class="priority__title">Заботимся о здоровье</div>
                 <div class="priority__subtitle">Мы работаем для того, 
                     чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
@@ -108,9 +108,9 @@
                 Просто заполните форму заявки<br>
                 и мы перезвоним вам в течении 10 минут
             </div>
-            <form class="feed-form" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваше телефон" type="number">
+            <form class="feed-form" id="consult-form" action="#">
+                <input name="name" required minlength="3" placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваше телефон">
                 <input name="email" required placeholder="Ваше E-mail" type="email">
 
                 <!-- <input type="submit" value="заказать консультацию"> -->
@@ -133,8 +133,8 @@
                     <img src="img/icons/slide_3.png" alt="watches">
                 </div>
             </div>
-            <button type="button" class="prev"><img src="../img/icons/prev.svg"></button>
-            <button type="button" class="next"><img src="../img/icons/next.svg"></button>
+            <button type="button" class="prev"><img src="img/icons/prev.svg"></button>
+            <button type="button" class="next"><img src="img/icons/next.svg"></button>
         </div>
     </section>
 
@@ -629,9 +629,9 @@
                 и мы перезвоним вам в течении 10 минут
             </div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваше телефон" type="number">
-                <input name="email" required placeholder="Ваше E-mail" type="email">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваше телефон">
+                <input name="email" placeholder="Ваше E-mail" type="email">
 
                 <!-- <input type="submit" value="заказать консультацию"> -->
                 <button class="button button_submit">заказать консультацию</button>
@@ -648,7 +648,7 @@
             </div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваше телефон" type="number">
+                <input name="phone" required placeholder="Ваше телефон">
                 <input name="email" required placeholder="Ваше E-mail" type="email">
 
                 <!-- <input type="submit" value="заказать консультацию"> -->
@@ -670,8 +670,14 @@
 
     </div>
 
+    <a href="#up" class="pageup" id="pageup_media">
+        <img src="img/icons/up.svg" alt="up">
+    </a>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>
